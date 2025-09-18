@@ -1,0 +1,76 @@
+/* *Comentarios en CSS */
+/* ? *Selector universal: Aplicar un margen y relleno de base para todos los elementos  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Parte del modelo de caja*/
+}
+/* *Selector ID: estilizar el contenido principal */
+/* *Signo de # para ID */
+#card{
+    width: 300px; /* Ancho de la tarjeta*/
+    padding: 20px; /* Relleno interno*/
+    margin: 50px auto; /* Centramos la tarjeta horizontalmente*/
+    border: 2px solid #0077b6; /* Borde visible*/
+    border-radius: 12px; /* Esquinas redondeadas*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar relieve*/
+    background-color: rgb(184, 220, 239); /* Color de fondo*/
+}
+
+/* *Selector por clase */
+.nombre{
+    font-size: 24px;
+    color: #023e8a;
+    margin-bottom: 10px; /*Espacio inferior entre elementos*/
+}
+.descripcion{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+/* *Selector por etiqueta: todos los enlaces (a) tendrán este estilo */
+a{
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+.link{
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+/* Pseudo-clase hover: cambia de color cuando pasa el mouse encima */
+.link:hover{
+    background-color: #023e8a;
+}
+
+h1{
+    color: green;              /* Todos los H1 en verde */
+}
+.blue{
+    color: blue;               /* Clase "blue" en azul */
+}
+#red{
+    color: red;                /* ID "red" en rojo */
+}
+
+/* ===== Estilos simples para Burger Bob ===== */
+#burger-bob{
+    margin: 20px;
+    padding: 16px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+}
+#burger-bob #btn-ven{
+    margin: 8px 0 12px 0;
+    padding: 8px 12px;
+}
+#burger-bob #burger-town{
+    cursor: pointer; /* Indica que se puede hacer clic */
+    margin-bottom: 8px;
+}
+#burger-bob #burger-img{
+    display: block;
+    margin-top: 8px;
+}

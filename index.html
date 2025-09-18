@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción con componentes HTML</title>
+    <!--Vinculamos el archivo CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+
+<section id="burger-bob">
+  <h1>Sitio de Burger Bob</h1>
+
+  <!-- Tarea 1: Al hacer clic, mostrar alerta "ES HORA DE UNA HAMBURGUESA" -->
+  <button id="btn-ven" onclick="alert('ES HORA DE UNA HAMBURGUESA')">¡VEN A BURGER TOWN!</button>
+
+  <!-- Tarea 2: Al hacer clic, imprimir en consola -->
+  <h2 id="burger-town" onclick="console.log('Alguien hizo clic en BURGER TOWN!')">BURGER TOWN!</h2>
+
+  <!-- Tarea 3: Imagen debajo del titular -->
+  <h3 id="burger-title">¡Una imagen de una HAMBURGUESA!</h3>
+  <img id="burger-img" src="imagenes/hamburguesa.jpg" alt="Imagen de una hamburguesa" width="300">
+
+  <!-- Tarea 4: Cambiar el titular a rojo al hacer clic en "¡ARROZ!" -->
+  <p>Haz clic en 
+    <span id="arroz" onclick="document.getElementById('burger-title').style.color='red'" style="cursor:pointer; text-decoration: underline;">
+      ¡ARROZ!
+    </span> 
+    para cambiar el título a rojo.
+  </p>
+</section>
+
+<!--Etiqueta script y atributo src para agregar archivo Javascript. Se agrega al final del documento por buena práctica-->
+<script src="script.js"></script>
+</body>
+</html>
+
